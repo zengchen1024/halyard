@@ -425,6 +425,9 @@
  * [**hal config provider google disable**](#hal-config-provider-google-disable)
  * [**hal config provider google edit**](#hal-config-provider-google-edit)
  * [**hal config provider google enable**](#hal-config-provider-google-enable)
+ * [**hal config provider huaweicloud**](#hal-config-provider-huaweicloud)
+ * [**hal config provider huaweicloud disable**](#hal-config-provider-huaweicloud-disable)
+ * [**hal config provider huaweicloud enable**](#hal-config-provider-huaweicloud-enable)
  * [**hal config provider kubernetes**](#hal-config-provider-kubernetes)
  * [**hal config provider kubernetes account**](#hal-config-provider-kubernetes-account)
  * [**hal config provider kubernetes account add**](#hal-config-provider-kubernetes-account-add)
@@ -6249,6 +6252,7 @@ hal config provider [subcommands]
  * `docker-registry`: Manage and view Spinnaker configuration for the dockerRegistry provider
  * `ecs`: Manage and view Spinnaker configuration for the ecs provider
  * `google`: Manage and view Spinnaker configuration for the google provider
+ * `huaweicloud`: Manage and view Spinnaker configuration for the huaweicloud provider
  * `kubernetes`: Manage and view Spinnaker configuration for the kubernetes provider
  * `oracle`: Manage and view Spinnaker configuration for the oracle provider
 
@@ -8250,6 +8254,54 @@ Set the google provider as enabled
 #### Usage
 ```
 hal config provider google enable [parameters]
+```
+
+#### Parameters
+ * `--deployment`: If supplied, use this Halyard deployment. This will _not_ create a new deployment.
+ * `--no-validate`: (*Default*: `false`) Skip validation.
+
+
+---
+## hal config provider huaweicloud
+
+Manage and view Spinnaker configuration for the huaweicloud provider
+
+#### Usage
+```
+hal config provider huaweicloud [parameters] [subcommands]
+```
+
+#### Parameters
+ * `--deployment`: If supplied, use this Halyard deployment. This will _not_ create a new deployment.
+ * `--no-validate`: (*Default*: `false`) Skip validation.
+
+#### Subcommands
+ * `disable`: Set the huaweicloud provider as disabled
+ * `enable`: Set the huaweicloud provider as enabled
+
+---
+## hal config provider huaweicloud disable
+
+Set the huaweicloud provider as disabled
+
+#### Usage
+```
+hal config provider huaweicloud disable [parameters]
+```
+
+#### Parameters
+ * `--deployment`: If supplied, use this Halyard deployment. This will _not_ create a new deployment.
+ * `--no-validate`: (*Default*: `false`) Skip validation.
+
+
+---
+## hal config provider huaweicloud enable
+
+Set the huaweicloud provider as enabled
+
+#### Usage
+```
+hal config provider huaweicloud enable [parameters]
 ```
 
 #### Parameters

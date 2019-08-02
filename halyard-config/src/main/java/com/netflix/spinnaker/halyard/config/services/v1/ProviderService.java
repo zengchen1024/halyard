@@ -25,6 +25,7 @@ import com.netflix.spinnaker.halyard.config.model.v1.providers.azure.AzureProvid
 import com.netflix.spinnaker.halyard.config.model.v1.providers.dcos.DCOSProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.dockerRegistry.DockerRegistryProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.google.GoogleProvider;
+import com.netflix.spinnaker.halyard.config.model.v1.providers.huaweicloud.HuaweiCloudProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.kubernetes.KubernetesProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.oracle.OracleBMCSProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.oracle.OracleProvider;
@@ -134,6 +135,9 @@ public class ProviderService {
         break;
       case ORACLEBMCS:
         providers.setOraclebmcs((OracleBMCSProvider) provider);
+        break;
+      case HUAWEICLOUD:
+        providers.setHuaweicloud((HuaweiCloudProvider) provider);
         break;
       default:
         throw new IllegalArgumentException("Unknown provider type " + provider.providerType());

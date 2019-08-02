@@ -99,7 +99,8 @@ public abstract class Provider<A extends Account> extends Node implements Clonea
     GOOGLE("google", "gce"),
     KUBERNETES("kubernetes"),
     ORACLE("oracle"),
-    ORACLEBMCS("oraclebmcs"); // obsolete, replaced by ORACLE
+    ORACLEBMCS("oraclebmcs"), // obsolete, replaced by ORACLE
+    HUAWEICLOUD("huaweicloud");
 
     @Getter String name;
 
