@@ -22,7 +22,7 @@ public class HuaweiCloudAccount extends Account {
   private String consulConfig;
 
   @LocalFile private String userDataFile;
-  private LBOptions lboptions = new LBOptions();
+  private LBOptions lbOptions = new LBOptions();
   private List<String> regions;
 
   @Data
