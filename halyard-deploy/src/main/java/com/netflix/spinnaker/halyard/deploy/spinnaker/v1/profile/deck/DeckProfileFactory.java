@@ -213,7 +213,7 @@ public class DeckProfileFactory extends RegistryBackedProfileFactory {
                   huaweiCloudProvider.getPrimaryAccount());
       List<String> regionList = huaweiCloudAccount.getRegions();
       if (!regionList.isEmpty()) {
-        bindings.put("huaweiCloud.default.region", regionList.get(0));
+        bindings.put("huaweicloud.default.region", regionList.get(0));
       }
     }
 
